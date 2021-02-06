@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Projects"
+---
+
+<ul class="projects">
+  {% for project in site.projects %}
+  <li>
+    {% include projectTile.html project=project %}
+  </li>
+  {% endfor %}
+</ul>

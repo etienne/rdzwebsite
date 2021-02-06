@@ -1,0 +1,18 @@
+body > header {
+  display: flex;
+  justify-content: space-between;
+  margin: $spacer1 0;
+
+  ul {
+    display: flex;
+
+    li {
+      margin-left: $spacer2;
+    }
+  }
+
+  a {
+    display: block;
+    padding: $spacer1 0;
+  }
+}

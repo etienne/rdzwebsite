@@ -1,0 +1,30 @@
+.projectTile {
+  display: block;
+  position: relative;
+  background-color: #ddd;
+  height: 24rem;
+  margin-bottom: $spacer2;
+
+  li:first-child & {
+    height: 48rem;
+  }
+
+  .label {
+    position: absolute;
+    bottom: $spacer1;
+    left: $spacer2;
+
+    h1, h2 {
+      font-size: 1rem;
+      display: inline-block;
+      font-weight: normal;
+    }
+
+    h1 {
+      &:after {
+        content: '~';
+        padding: 0 $spacer1;
+      }
+    }
+  }
+}
