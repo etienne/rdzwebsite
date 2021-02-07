@@ -2,6 +2,8 @@
   display: block;
   position: relative;
   background-color: #ddd;
+  background-size: cover;
+  background-position: center;
   height: 24rem;
   margin-bottom: $spacer2;
 
@@ -10,6 +12,7 @@
   }
 
   .label {
+    color: $backgroundColor;
     position: absolute;
     bottom: $spacer1;
     left: $spacer2;
