@@ -1,5 +1,7 @@
 {% assign image_url = include.project.url | replace: 'index.html', 'images/main.jpg' %}
-<a class="projectTile" style="background-image: url({{ image_url }})" href="{{ include.project.url }}">
+{% assign project_url = include.project.url | replace: '/index.html', '' %}
+
+<a class="projectTile" style="background-image: url({{ image_url }})" href="{{ project_url }}">
   <div class="label">
     <h1>{{ include.project.title }}</h1>
     <h2>{{ include.project.type }} </h2>
