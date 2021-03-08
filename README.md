@@ -2,16 +2,22 @@
 
 ## Installation
 
-This is a [Jekyll](https://jekyllrb.com) project. Ruby 2.4.0 or later is required. If things don't work, see Jekyll’s [installation instructions](https://jekyllrb.com/docs/installation/).
+This is a [Jekyll](https://jekyllrb.com) project. Ruby 2.4.0 or later is required. You can install the required gems with `bundle install`.
 
-```
-bundle install
-```
+If that doesn’t work, install [Docker Desktop](https://www.docker.com/get-started).
 
 ## Run local web server
 
+If you have a working local Jekyll installation:
+
 ```
 bundle exec jekyll serve
+```
+
+If you’re using Docker:
+
+```
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
 The development website will be available at [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
