@@ -1,7 +1,15 @@
 body > header {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   margin: $spacer1 0;
+  top: 0;
+  z-index: 1000;
+
+  > a {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
 
   ul {
     display: flex;

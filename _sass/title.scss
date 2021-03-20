@@ -1,7 +1,13 @@
 .title {
   margin: $spacer4 0;
+  padding-bottom: $spacer2;
+  background: url("../images/wave.svg") no-repeat bottom center;
 
   &.center {
     text-align: center;
+  }
+
+  h1 {
+    font-size: 3.37em;
   }
 }
