@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="9px" viewBox="0 0 33 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Project" transform="translate(-279.000000, -168.000000)" stroke="#000000">
+            <g id="Group" transform="translate(280.000000, 168.000000)">
+                <line x1="0.344444444" y1="0.5" x2="30.6555556" y2="0.5" id="Line-4"></line>
+                <line x1="0.344444444" y1="8.5" x2="30.6555556" y2="8.5" id="Line-4-Copy"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -2,7 +2,6 @@
 $backgroundColor: #FFFFEE;
 $bodyColor: #000000;
 $bodyFont: Whyte,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-$bodySize: 1.2rem;
 $spacer1: 1rem;
 $spacer2: 2rem;
 $spacer3: 3rem;
@@ -30,7 +29,11 @@ a {
 
 // Base
 html {
-  font-size: $bodySize;
+  font-size: 1rem;
+
+  @include desktop {
+    font-size: 1.2rem;
+  }
 }
 
 body {
@@ -41,6 +44,11 @@ body {
   font-family: $bodyFont;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: $spacer2;
-  padding-right: $spacer2;
+  padding-left: $spacer1;
+  padding-right: $spacer1;
+
+  @include tablet {
+    padding-left: $spacer2;
+    padding-right: $spacer2;
+  }
 }

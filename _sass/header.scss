@@ -6,16 +6,66 @@ body > header {
   top: 0;
   z-index: 1000;
 
+  &.showMenu {
+    background-color: black;
+    flex-direction: column;
+
+    > a {
+      display: none;
+    }
+
+    button.open {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 2em;
+      padding-top: $spacer3;
+      padding-bottom: $spacer3;
+
+      a {
+        color: $backgroundColor;
+      }
+    }
+  }
+
   > a {
     font-weight: bold;
     font-size: 1.1em;
   }
 
-  ul {
-    display: flex;
+  button {
+    border: 0;
+    background: url("../images/menu.svg") no-repeat center;
+    text-indent: -9999px;
+    width: 31px;
 
-    li {
-      margin-left: $spacer2;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  button.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("../images/close.svg");
+    width: calc(2rem + 24px);
+    height: calc(2rem + 24px);
+  }
+
+  ul {
+    display: none;
+
+    @include tablet {
+      display: flex;
+
+      li {
+        margin-left: $spacer2;
+      }
     }
   }
 
