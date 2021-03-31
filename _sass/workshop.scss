@@ -1,0 +1,72 @@
+.workshop {
+  header {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+    @include desktop {
+      display: flex;
+    }
+
+    .meta {
+      @extend .smallcaps;
+      padding: 1.3rem 0 0.8rem;
+
+      @include desktop {
+        width: 2 / 12 * 100%;
+        padding-top: 2rem;
+      }
+    }
+  
+    h1 {
+      padding-bottom: 1.3rem;
+
+      @include desktop {
+        width: 5 / 12 * 100%;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        border-right: 1px solid black;
+      }
+    }
+  }
+
+  .content {
+    @include desktop {
+      display: flex;
+    }
+
+    .image {
+      margin-top: 1rem;
+      margin-bottom: 1.3rem;
+
+      @include desktop {
+        order: 1;
+        width: 5 / 12 * 100%;
+        padding-left: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  
+    .description {
+      @include desktop {
+        width: 5 / 12 * 100%;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        border-right: 1px solid black;
+      }
+    }
+  
+    .link {
+      @include desktop {
+        order: -1;
+        width: 2 / 12 * 100%;
+        padding-top: 1rem;
+      }
+      
+      a {
+        @extend .smallcaps;
+        padding-left: 1.3rem;
+        background: url("../images/arrow-down.svg") no-repeat left center;
+      }
+    }
+  }
+}

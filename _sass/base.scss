@@ -18,6 +18,10 @@ p {
   margin: 0 0 $spacer1;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 ul {
   list-style: none;
 }
@@ -30,9 +34,14 @@ a {
 // Base
 html {
   font-size: 1rem;
+  line-height: 1.4;
 
   @include desktop-large {
     font-size: 1.2rem;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }
 
@@ -51,4 +60,10 @@ body {
     padding-left: $spacer2;
     padding-right: $spacer2;
   }
+}
+
+.smallcaps {
+  text-transform: uppercase;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
 }
