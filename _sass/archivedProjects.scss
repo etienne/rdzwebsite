@@ -1,0 +1,9 @@
+.archivedProjects {
+  display: block;
+  font-weight: bold;
+  border: 21px solid transparent;
+  border-image: url("../images/fancy-border.svg") 21;
+  text-align: center;
+  padding-top: $spacer4;
+  padding-bottom: $spacer4;
+}

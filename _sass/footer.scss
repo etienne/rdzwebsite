@@ -1,3 +1,27 @@
 body > footer {
-  padding: $spacer2 0;
+  padding: 5rem 0;
+
+  @include desktop {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  div.col {
+    margin-bottom: $spacer1;
+
+    @include desktop {
+      width: calc(100% - 2rem);
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    &.copyright {
+      color: #99998E;
+
+      @include desktop {
+        order: -1;
+      }
+    }
+  }
 }
