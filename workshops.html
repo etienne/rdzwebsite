@@ -3,25 +3,10 @@ layout: default
 title: "Workshops"
 ---
 
-<article class="workshop">
-  <header>
-    <div class="meta">
-      3 days — All Ages
-    </div>
-    <h1>
-      Desmystification of Electronic Art
-    </h1>
-  </header>
-  <div class="content">
-    <div class="image">
-      <img src="assets/images/mr_ruby.jpg"/>
-    </div>
-    <div class="description">
-      <p>A workshop aimed at familiarizing participants with electronic art and providing the necessary tools and knowledge to start experimenting with the medium themselves.</p>
-      <p>Beginning with a quick introduction to the history of electronic art, participants will then learn the basics of circuitry and soldering by creating their own analog oscillator. The workshop will also cover the basics of microcontrollers and programming within the Arduino IDE. Even if this is not a workshop on the Arduino, it will be introduced to make a link between digital and analogue. Each participant will leave with a basic electronics kit. This workshop was designed by Nicolas Lapointe and Martín Rodríguez.</p>
-    </div>
-    <div class="link">
-      <a href="#">PDF</a>
-    </div>
-  </div>
-</article>
+<ul class="workshops">
+  {% for workshop in site.workshops %}
+  <li>
+    {% include workshop.html workshop=workshop %}
+  </li>
+  {% endfor %}
+</ul>

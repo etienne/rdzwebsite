@@ -1,0 +1,23 @@
+<article class="workshop">
+  <header>
+    <div class="meta">
+      {{ workshop.meta }}
+    </div>
+    <h1>
+      {{ workshop.title }}
+    </h1>
+  </header>
+  <div class="content">
+    <div class="image">
+      <img src="assets/images/mr_ruby.jpg"/>
+    </div>
+    <div class="description">
+      {{ workshop.content }}
+    </div>
+    <div class="link">
+      {% if workshop.download_link %}
+        <a href="{{ workshop.download_link }}">{{ workshop.download_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</article>

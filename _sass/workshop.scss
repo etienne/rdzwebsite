@@ -1,4 +1,6 @@
 .workshop {
+  margin-bottom: $spacer4;
+
   header {
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -69,22 +71,26 @@
       }
     }
   }
+}
 
-  &.photo-left {
-    @include desktop {
-      .image {
-        margin-top: 0;
-        padding-top: 1rem;
-        padding-left: 0;
-        padding-right: 1rem;
-        order: 0;
-        border-right: 1px solid;
-      }
-      
-      .description {
-        order: 1;
-        border-right: 0;
-        padding-left: 1rem;
+.workshops {
+  li:nth-child(2n) {
+    .workshop {
+      @include desktop {
+        .image {
+          margin-top: 0;
+          padding-top: 1rem;
+          padding-left: 0;
+          padding-right: 1rem;
+          order: 0;
+          border-right: 1px solid;
+        }
+        
+        .description {
+          order: 1;
+          border-right: 0;
+          padding-left: 1rem;
+        }
       }
     }
   }
