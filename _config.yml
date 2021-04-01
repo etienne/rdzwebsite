@@ -9,4 +9,6 @@ collections:
   projects:
     output: true
   workshops:
-    output: false
+    output: true
+  curation:
+    output: true

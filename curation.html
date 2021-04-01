@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Curation"
+---
+
+<ul class="curation">
+  {% for curation in site.curation %}
+  <li>
+    {% include curationItem.html curation=curation %}
+  </li>
+  {% endfor %}
+</ul>

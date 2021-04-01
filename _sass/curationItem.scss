@@ -1,0 +1,17 @@
+.curationItem {
+  margin-bottom: $spacer4;
+
+  .details {
+    @extend .columns;
+    margin-top: $spacer1;
+
+    @include desktop {
+      margin-top: $spacer2;
+    }
+
+    header .years {
+      @extend .smallcaps;
+      margin-top: 0.2rem;
+    }
+  }
+}
