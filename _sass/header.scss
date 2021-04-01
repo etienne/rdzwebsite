@@ -2,7 +2,7 @@ body > header {
   position: sticky;
   display: flex;
   justify-content: space-between;
-  margin: $spacer1 0;
+  margin: $spacer1 0 $spacer4;
   top: 0;
   z-index: 1000;
 
@@ -73,4 +73,8 @@ body > header {
     display: block;
     padding: $spacer1 0;
   }
+}
+
+body.projects > header {
+  margin-bottom: $spacer1;
 }
