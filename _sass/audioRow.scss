@@ -1,0 +1,35 @@
+.audioRow {
+  border-bottom: 1px solid;
+
+  a {
+    @extend .columns;
+    display: block;
+    padding: 1.5rem 0;
+
+    .year, .title, .link {
+      margin-bottom: 0.2rem;
+    }
+
+    .year, .link {
+      @extend .smallcaps;
+
+      @include desktop {
+        position: relative;
+        top: 7px;
+      }
+    }
+  
+    .title {
+      font-weight: bold;
+      font-size: 1.1em;
+      min-width: calc((100% - 4rem) / 2);
+    }
+  
+    .link {
+      span {
+        padding-right: 1.1rem;
+        background: url("../images/arrow-out.svg") no-repeat right center;
+      }
+    }
+  }
+}

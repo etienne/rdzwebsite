@@ -1,0 +1,38 @@
+.audioTile {
+  border: 1px solid;
+  margin-bottom: -1px;
+  padding: $spacer1;
+
+  @include tablet {
+    float: left;
+    margin-right: -1px;
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 25%;
+  }
+
+  &.gap {
+    display: none;
+    border: 0;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  .image {
+    margin-bottom: $spacer1;
+  }
+
+  .title {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-right: 0.5rem;
+  }
+
+  .subtitle {
+    @extend .smallcaps;
+  }
+}

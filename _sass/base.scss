@@ -18,10 +18,6 @@ p {
   margin: 0 0 $spacer1;
 }
 
-h1 {
-  font-size: 2em;
-}
-
 ul {
   list-style: none;
 }
@@ -62,8 +58,37 @@ body {
   }
 }
 
+h1 {
+  font-size: 2em;
+
+  &.large {
+    margin: 5rem 0 2rem;
+    font-size: 2.5em;
+
+    @include tablet {
+      margin: 7rem 0 3rem;
+      font-size: 3.37em;
+    }
+  }
+
+  &.wave {
+    background: url("../images/wave.svg") no-repeat bottom center;
+    padding-bottom: $spacer2;
+  }
+
+  &.center {
+    text-align: center;
+  }
+}
+
 .smallcaps {
   text-transform: uppercase;
   font-size: 0.72em;
   letter-spacing: 0.06em;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
 }
