@@ -1,4 +1,8 @@
 .workshop {
+  @include desktop {
+    margin: $spacer4 0;
+  }
+
   header {
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -51,7 +55,7 @@
         width: 5 / 12 * 100%;
         padding-top: 1rem;
         padding-right: 1rem;
-        border-right: 1px solid black;
+        border-right: 1px solid;
       }
     }
   
@@ -66,6 +70,25 @@
         @extend .smallcaps;
         padding-left: 1.3rem;
         background: url("../images/arrow-down.svg") no-repeat left center;
+      }
+    }
+  }
+
+  &.photo-left {
+    @include desktop {
+      .image {
+        margin-top: 0;
+        padding-top: 1rem;
+        padding-left: 0;
+        padding-right: 1rem;
+        order: 0;
+        border-right: 1px solid;
+      }
+      
+      .description {
+        order: 1;
+        border-right: 0;
+        padding-left: 1rem;
       }
     }
   }
