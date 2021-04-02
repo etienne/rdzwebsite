@@ -4,6 +4,17 @@
   border: 21px solid transparent;
   border-image: url("../images/fancy-border.svg") 21;
   text-align: center;
-  padding-top: $spacer4;
-  padding-bottom: $spacer4;
+  padding-top: $spacer2;
+  padding-bottom: $spacer2;
+
+  @include tablet {
+    padding-top: $spacer4;
+    padding-bottom: $spacer4;
+  }
+
+  span {
+    position: relative;
+    top: -10px;
+    left: -10px;
+  }
 }

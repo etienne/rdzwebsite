@@ -47,7 +47,7 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
-  max-width: 75rem;
+  max-width: calc(1360px + #{$spacer4});
   margin: 0 auto;
   padding-left: $spacer1;
   padding-right: $spacer1;
@@ -72,8 +72,12 @@ h1 {
   }
 
   &.wave {
-    background: url("../images/wave.svg") no-repeat bottom center;
+    background: url("../images/wave.svg") no-repeat bottom left;
     padding-bottom: $spacer2;
+  }
+
+  &.wave.center {
+    background-position-x: center;
   }
 
   &.center {

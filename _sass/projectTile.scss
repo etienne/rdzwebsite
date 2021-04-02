@@ -4,26 +4,36 @@
   background-color: #ddd;
   background-size: cover;
   background-position: center;
-  height: 24rem;
-  margin-bottom: $spacer2;
+  height: 0;
+  padding-bottom: 40%;
+  margin-bottom: $spacer1;
 
   li:first-child & {
-    height: 48rem;
+    padding-bottom: 62.5%;
+  }
+
+  @include tablet {
+    margin-bottom: $spacer2;
   }
 
   .label {
     color: $backgroundColor;
     position: absolute;
-    bottom: 1.7rem;
-    left: $spacer2;
+    bottom: 0.9rem;
+    left: $spacer1;
+
+    @include tablet {
+      bottom: 1.7rem;
+      left: $spacer2;
+    }
 
     h1, h2 {
-      font-size: 1rem;
       display: inline-block;
       font-weight: normal;
     }
 
     h1 {
+      font-size: 1rem;
       font-weight: bold;
       background: url("../images/wave-white.svg") no-repeat right;
       padding-right: 70px;
