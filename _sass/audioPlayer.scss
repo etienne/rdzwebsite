@@ -1,0 +1,48 @@
+.audioPlayer {
+  background-color: $bodyColor;
+  color: $backgroundColor;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  text-align: center;
+  padding: $spacer1 0;
+
+  button {
+    position: relative;
+    top: 3px;
+    background: transparent;
+    border: 0;
+    margin-right: 0.5rem;
+  }
+
+  .live {
+    font-weight: bold;
+  }
+
+  .playbackIndicator {
+    display: inline-block;
+    width: 59px;
+    height: 20px;
+    background: url("/assets/images/wave-loop.svg") repeat-x;
+    text-indent: -9999px;
+    margin: 0 1rem;
+    animation: 0.5s waveloop linear infinite;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
+@keyframes waveloop {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: -17px;
+  }
+}
