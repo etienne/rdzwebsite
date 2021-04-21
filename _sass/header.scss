@@ -5,6 +5,7 @@ body > header {
   margin: $spacer1 0 $spacer4;
   top: 0;
   z-index: 1000;
+  background-color: $backgroundColor;
 
   &.showMenu {
     background-color: black;
