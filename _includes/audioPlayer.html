@@ -1,19 +1,28 @@
-<section class="audioPlayer">
-  <audio src="http://stm01.virtualcast.com.br:8294/live"></audio>
-  <button class="play">
-    <img src="/assets/images/play.svg" alt="Play">
-  </button>
-  <span class="live">Live now</span>
-  <span class="playbackIndicator">Currently Paused</span>
-  <span class="title">In Search of Aztlan…</span>
-  <button class="details">
-    <img src="/assets/images/close.svg" alt="Details">
-  </button>
+{% for page in site.pages %}
+  {% if page.url == "/live.html" %}
+    {% assign player = page %}
+  {% endif %}
+{% endfor %}
 
-  <div class="content">
-    <h1 class="large center">In Search of Aztlan…</h1>
-    <div class="text large">
-      <p>In Search of Aztlan… is an intervention based work that follows Rodríguez as he explores the territory around his childhood home, contemplating his roots, and in doing so cracking a window into the US/MX border.  By merging dashcam videos, along with audio recordings of radio signals the work explores how borders, both physical and psychological, shape our individual and collective identities.</p>
+{% if player.enable %}
+  <section class="audioPlayer">
+    <audio src="{{ player.stream }}"></audio>
+    <button class="play" disabled>
+      <img src="/assets/images/play.svg" alt="Play">
+    </button>
+    <span class="live">Live now</span>
+    <span class="playbackIndicator">Currently Paused</span>
+    <span class="title">{{ player.title }}</span>
+    <button class="details">
+      <img src="/assets/images/close.svg" alt="Details">
+    </button>
+
+    <div class="content">
+      <h1 class="large center">{{ player.title }}</h1>
+      <div class="text large">
+        {{ player.content }}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+{% endif %}
+

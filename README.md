@@ -29,11 +29,16 @@ There are two broad categories of pages:
     * `about.html`
     * `404.html`
     * `audio.html`
+    * `live.html`
 
 * **Dynamic pages** make complex content easier to manage by splitting it into multiple files, which are then assembled into a single page by Jekyll. Each dynamic page has a corresponding folder at the root level of the project:
     * `_curation`
     * `_projects`
     * `_workshops`
+
+## Disabling or editing the audio player
+
+The file to edit is `live.html`. Change `enable` to `false` to completely hide the audio player.
 
 ## Image Sizes
 
@@ -48,10 +53,10 @@ These are recommended sizes. Things will still work if some images are slightly 
 
 ## Todo
 
-* Allow audio player to be disabled
 * Add hover effects
 * Allow projects, workshops and curation to be manually ordered
 * Allow projects to be archived and make Archived Projects show only those projects
 * Don’t make first project big on archive page
 * Integrate final design for project pages
 * Make small thumbnails big on mobile
+* Add favicon

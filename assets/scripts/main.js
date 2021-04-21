@@ -37,7 +37,12 @@ document.querySelector('.audioPlayer button.details').addEventListener('click', 
   }
 });
 
+audioElement.addEventListener('canplay', function(event) {
+  playButton.disabled = false;
+});
+
 var pjax = new Pjax({
+  cacheBust: false,
   selectors: [
     "title",
     "meta[name=description]",
