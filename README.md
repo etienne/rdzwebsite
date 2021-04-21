@@ -48,9 +48,10 @@ These are recommended sizes. Things will still work if some images are slightly 
 
 ## Todo
 
-* Add audio player
+* Allow audio player to be disabled
 * Add hover effects
 * Allow projects, workshops and curation to be manually ordered
 * Allow projects to be archived and make Archived Projects show only those projects
 * Don’t make first project big on archive page
 * Integrate final design for project pages
+* Make small thumbnails big on mobile

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chevron</title>
+    <g id="chevron" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <polyline id="Path-Copy" stroke="#FFFFEE" transform="translate(11.030211, 8.697674) scale(-1, 1) translate(-11.030211, -8.697674) " points="21.0302115 4.69767442 11.0302115 12.6976744 1.03021148 4.69767442"></polyline>
+    </g>
+</svg>

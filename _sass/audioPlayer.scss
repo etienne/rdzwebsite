@@ -2,13 +2,47 @@
   background-color: $bodyColor;
   color: $backgroundColor;
   position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   text-align: center;
+  margin-left: -$spacer1;
+  margin-right: -$spacer1;
   padding: $spacer1 0;
+
+  @include tablet {
+    margin-left: -$spacer2;
+    margin-right: -$spacer2;
+  }
+
+  &.fullscreen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 2000;
+
+    .title {
+      display: none;
+    }
+
+    button.details {
+      height: auto;
+
+      @include tablet {
+        right: $spacer1;
+      }
+    }
+
+    .content {
+      display: block;
+    }
+  }
+
+  &.playing {
+    .playbackIndicator {
+      animation: 0.5s waveloop linear infinite;
+    }
+  }
 
   button {
     position: relative;
@@ -16,6 +50,19 @@
     background: transparent;
     border: 0;
     margin-right: 0.5rem;
+
+    &.details {
+      position: absolute;
+      top: 1.3rem;
+      margin-right: 0;
+      right: $spacer1;
+      height: 14px;
+      overflow: hidden;
+
+      @include tablet {
+        right: $spacer2;
+      }
+    }
   }
 
   .live {
@@ -29,11 +76,33 @@
     background: url("/assets/images/wave-loop.svg") repeat-x;
     text-indent: -9999px;
     margin: 0 1rem;
-    animation: 0.5s waveloop linear infinite;
   }
 
   .title {
     display: none;
+
+    @include tablet {
+      display: inline;
+    }
+  }
+
+  .content {
+    display: none;
+    text-align: left;
+    margin: auto;
+    padding: $spacer1;
+
+    @include tablet {
+      padding: $spacer2;
+    }
+
+    @include desktop {
+      max-width: 50%;
+    }
+  }
+
+  .wave {
+    background-image: url("../images/wave-white.svg");
   }
 }
 

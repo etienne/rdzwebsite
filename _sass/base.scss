@@ -51,6 +51,7 @@ body {
   margin: 0 auto;
   padding-left: $spacer1;
   padding-right: $spacer1;
+  width: 100%;
 
   @include tablet {
     padding-left: $spacer2;
@@ -60,6 +61,7 @@ body {
 
 h1 {
   font-size: 2em;
+  line-height: 1.2;
 
   &.large {
     margin: 5rem 0 2rem;
