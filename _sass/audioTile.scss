@@ -11,6 +11,9 @@
 
   @include desktop {
     width: 25%;
+    &:nth-child(4n + 1) {
+      clear: left;
+    }
   }
 
   &.gap {
