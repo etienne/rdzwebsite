@@ -1,12 +1,16 @@
 .projectTile {
   display: block;
   position: relative;
-  background-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-position: center;
   height: 0;
   padding-bottom: 40%;
   margin-bottom: $spacer1;
+
+  &:hover {
+    opacity: 1;
+  }
 
   li:first-child & {
     padding-bottom: 62.5%;
