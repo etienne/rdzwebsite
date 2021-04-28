@@ -1,13 +1,33 @@
 .text {
   &.narrow {
-    width: calc(50% - #{$spacer2});
+    @include tablet {
+      width: calc(50% - #{$spacer2});
+    }
   }
 
   &.center {
     margin: 0 auto;
   }
 
+  &.right {
+    @include tablet {
+      margin-left: calc(50% + #{$spacer2});
+    }
+  }
+
   &.large {
     font-size: 1.25em;
+  }
+}
+
+section.content.index {
+  .text {
+    margin-top: $spacer2;
+    margin-bottom: $spacer2;
+
+    @include tablet {
+      margin-top: $spacer4;
+      margin-bottom: $spacer4;
+    }
   }
 }

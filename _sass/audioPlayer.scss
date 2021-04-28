@@ -1,16 +1,14 @@
 .audioPlayer {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background-color: $bodyColor;
   color: $backgroundColor;
-  position: relative;
   text-align: center;
-  margin-left: -$spacer1;
-  margin-right: -$spacer1;
   padding: $spacer1 0;
-
-  @include tablet {
-    margin-left: -$spacer2;
-    margin-right: -$spacer2;
-  }
 
   &.fullscreen {
     position: absolute;
@@ -51,6 +49,7 @@
     background: transparent;
     border: 0;
     margin-right: 0.5rem;
+    padding: 0;
     cursor: pointer;
 
     &:disabled {
@@ -71,7 +70,7 @@
       top: 1.3rem;
       margin-right: 0;
       right: $spacer1;
-      height: 14px;
+      height: 13px;
       overflow: hidden;
 
       @include tablet {

@@ -4,8 +4,10 @@ title: "Projects"
 slug: "projects"
 ---
 
+{% assign sorted_projects = site.projects | where_exp: "item", "item.archived != true" | sort: "date" | reverse %}
+
 <ul class="projects">
-  {% for project in site.projects %}
+  {% for project in sorted_projects %}
   <li>
     {% include projectTile.html project=project %}
   </li>

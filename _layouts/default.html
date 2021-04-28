@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <script src="/assets/scripts/pjax.min.js"></script>
   </head>
-  <body class="{{ page.slug }}">
+  <body>
     {% include audioPlayer.html %}
     {% include header.html %}
-    <section class="content">
+    <section class="content {{ page.slug }}">
       {{ content }}
     </section>
     {% include footer.html %}

@@ -5,6 +5,8 @@ var playButton = document.querySelector('.audioPlayer button.play');
 var detailsButton = document.querySelector('.audioPlayer button.details');
 var audioElement = document.querySelector('.audioPlayer audio');
 
+console.log('🚑');
+
 document.querySelector('.header button').addEventListener('click', function() {
   if (header.className == 'showMenu') {
     header.className = 'hideMenu';
@@ -47,6 +49,6 @@ var pjax = new Pjax({
     "title",
     "meta[name=description]",
     "header.header",
-    "section.content"
-  ]
+    "section.content",
+  ],
 });

@@ -1,0 +1,14 @@
+.projectTitle {
+  .label {
+    margin: 1rem 0 2rem;
+
+    @include tablet {
+      margin: 7rem 0 3rem;
+    }
+
+    .year {
+      @extend .smallcaps;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

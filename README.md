@@ -24,21 +24,32 @@ The development website will be available at [http://127.0.0.1:4000/](http://127
 
 ## Managing Content
 
-There are two broad categories of pages:
-*  **Self-contained pages** have everything in a single file. These files reside at the root level of the project:
+### Audio player
+
+To configure the audio player, edit `live.html`. Change `enable` to `false` to completely hide the audio player.
+
+### Projects
+
+Projects reside in the `_projects` folder. Each project has its own folder with a single HTML file and several images.
+
+Projects are sorted by date. To reorder them, edit the `date` field at the top of the HTML file.
+
+To hide a project from the home page and send it to the archive, set `archived: true` at the top of the file.
+
+### Curation
+
+Curation content resides in the `_curation` folder. They are ordered by filename. To reorder them, edit the number at the beginning of the relevant filenames.
+
+### Workshops
+
+Workshops reside in the `_workshops` folder. They are ordered by filename. To reorder them, edit the number at the beginning of the relevant filenames.
+
+### About, Audio, 404
+
+These are self-contained pages that have everything in a single file. These files reside at the root level of the project:
     * `about.html`
-    * `404.html`
     * `audio.html`
-    * `live.html`
-
-* **Dynamic pages** make complex content easier to manage by splitting it into multiple files, which are then assembled into a single page by Jekyll. Each dynamic page has a corresponding folder at the root level of the project:
-    * `_curation`
-    * `_projects`
-    * `_workshops`
-
-## Disabling or editing the audio player
-
-The file to edit is `live.html`. Change `enable` to `false` to completely hide the audio player.
+    * `404.html`
 
 ## Image Sizes
 
@@ -53,10 +64,6 @@ These are recommended sizes. Things will still work if some images are slightly 
 
 ## Todo
 
-* Allow projects, workshops and curation to be manually ordered
-* Allow projects to be archived and make Archived Projects show only those projects
-* Don’t make first project big on archive page
-* Integrate final design for project pages
-* Make small thumbnails big on mobile
-* Add favicon
+* Add "Back to projects list"
+* Add link from archived projects to home page
 * Highlight current section in main menu
